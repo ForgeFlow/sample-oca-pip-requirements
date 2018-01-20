@@ -5,7 +5,6 @@ setuptools-odoo==2.0.2.post1
 -e git+https://github.com/odoo/odoo.git@10.0#egg=odoo
 # OCA/server-tools
 -e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_date_range&subdirectory=setup/date_range
--e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_admin_technical_features&subdirectory=setup/admin_technical_features
 -e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_auth_brute_force&subdirectory=setup/auth_brute_force
 -e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_auth_totp&subdirectory=setup/auth_totp
 -e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_password_security&subdirectory=setup/password_security
