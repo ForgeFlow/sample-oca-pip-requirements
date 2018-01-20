@@ -12,5 +12,7 @@ setuptools-odoo==2.0.2.post1
 -e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_disable_odoo_online&subdirectory=setup/disable_odoo_online
 -e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_disable_odoo_online&subdirectory=setup/disable_odoo_online
 -e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_res_config_settings_enterprise_remove&subdirectory=setup/res_config_settings_enterprise_remove
+# OCA/account-closing
+-e git+https://github.com/OCA/account-closing.git@10.0#egg=odoo10_addon_account_multicurrency_revaluation&subdirectory=setup/account_multicurrency_revaluation
 
 
