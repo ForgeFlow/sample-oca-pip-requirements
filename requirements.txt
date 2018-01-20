@@ -1,9 +1,17 @@
--e git+https://github.com/Eficent/odoo-autodiscover.git@fix-unicode-decode-error#egg=odoo-autodiscover
-
-setuptools-git==1.1
+setuptools==38.4.0
+odoo-autodiscover==2.0.0
+setuptools-git==1.2
 setuptools-odoo==2.0.2.post1
--e git+https://github.com/odoo/odoo.git@11.0#egg=odoo
+-e git+https://github.com/odoo/odoo.git@10.0#egg=odoo
+# OCA/server-tools
+-e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_date_range&subdirectory=setup/date_range
+-e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_admin_technical_features&subdirectory=setup/admin_technical_features
+-e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_auth_brute_force&subdirectory=setup/auth_brute_force
+-e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_auth_totp&subdirectory=setup/auth_totp
+-e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_password_security&subdirectory=setup/password_security
+-e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_auth_totp_password_security&subdirectory=setup/auth_totp_password_security
+-e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_disable_odoo_online&subdirectory=setup/disable_odoo_online
+-e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_disable_odoo_online&subdirectory=setup/disable_odoo_online
+-e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_res_config_settings_enterprise_remove&subdirectory=setup/res_config_settings_enterprise_remove
 
-# OCA/partner-contact
--e git+https://github.com/OCA/partner-contact.git@11.0#egg=odoo11_addon_partner_firstname&subdirectory=setup/partner_firstname
--e git+https://github.com/OCA/partner-contact.git@11.0#egg=odoo11_addon_partner_second_lastname&subdirectory=setup/partner_second_lastname
+
