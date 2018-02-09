@@ -1,8 +1,3 @@
-setuptools==38.4.0
-odoo-autodiscover==2.0.0
-setuptools-git==1.2
-setuptools-odoo==2.0.2.post1
--e git+https://github.com/odoo/odoo.git@10.0#egg=odoo
 # OCA/server-tools
 -e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_date_range&subdirectory=setup/date_range
 -e git+https://github.com/OCA/server-tools.git@10.0#egg=odoo10_addon_auth_brute_force&subdirectory=setup/auth_brute_force
