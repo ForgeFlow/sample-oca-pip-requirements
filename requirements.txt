@@ -20,6 +20,3 @@ odoo11-addon-base-technical-features
 -e git+https://github.com/OCA/account-financial-reporting.git@11.0#egg=odoo11_addon_account_financial_report&subdirectory=setup/account_financial_report
 -e git+https://github.com/OCA/account-financial-reporting.git@11.0#egg=odoo11_addon_account_tax_balance&subdirectory=setup/account_tax_balance
 
-
-
-
