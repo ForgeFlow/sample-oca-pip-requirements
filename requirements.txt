@@ -1,4 +1,5 @@
 # OCA/server-ux
+-e git+https://github.com/OCA/server-ux.git@11.0#egg=odoo11_addon_date_range&subdirectory=setup/date_range
 -e git+https://github.com/OCA/server-ux.git@11.0#egg=odoo11_addon_base_technical_features&subdirectory=setup/base_technical_features
 
 # OCA/server-tools
