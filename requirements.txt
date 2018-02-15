@@ -1,7 +1,7 @@
--f https://wheelhouse.odoo-community.org/oca
+https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # OCA/server-ux
-odoo11-addon-date-range==11.0.1.0.0.99.dev3
-odoo11-addon-base-technical-features
+-e git+https://github.com/OCA/server-tools.git@11.0#egg=odoo11_addon_date_range&subdirectory=setup/date_range
+-e git+https://github.com/OCA/server-tools.git@11.0#egg=odoo11_addon_base_technical_features&subdirectory=setup/base_technical_features
 # OCA/server-tools
 -e git+https://github.com/OCA/server-tools.git@11.0#egg=odoo11_addon_auditlog&subdirectory=setup/auditlog
 
