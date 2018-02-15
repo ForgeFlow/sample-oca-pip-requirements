@@ -1,7 +1,7 @@
 -f https://wheelhouse.odoo-community.org/oca
 # OCA/server-ux
-odoo11-addon-date-range>=11.0
-odoo11-addon-base-technical-features>=11.0
+odoo11-addon-date-range==11.0.1.0.0.99.dev3
+odoo11-addon-base-technical-features
 
 # OCA/server-tools
 -e git+https://github.com/OCA/server-tools.git@11.0#egg=odoo11_addon_auditlog&subdirectory=setup/auditlog
