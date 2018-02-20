@@ -10,6 +10,10 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 #   (https://github.com/OCA/server-tools/tree/10.0/auth_supplier)
 # MIGRATING - base_cron_exclusion
 #   (https://github.com/OCA/server-tools/pull/1156)
+# base_exception
+-e git+https://github.com/OCA/server-tools.git@11.0#egg=odoo11_addon_base_exception&subdirectory=setup/base_exception
+# TO MIGRATE - tier_validation: Supports tiered validation of flows, like purchase orders
+#   (https://github.com/eficent/server-tools 9.0-add-base_tier_validation)
 
 #### OCA/server-auth ####
 # password_security:  set company-level password security requirements
@@ -37,11 +41,23 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # MIGRATING - web_widget_x2many_2d_matrix: Dependency for DDMRP
 #   (https://github.com/OCA/web/pull/871)
 # web_widget_bokeh_chart: Dependency for DDMRP
--e git+https://github.com/OCA/web.git@11.0#egg=odoo11_addonweb_widget_bokeh_chart&subdirectory=setup/web_widget_bokeh_chart
+-e git+https://github.com/OCA/web.git@11.0#egg=odoo11_addon_web_widget_bokeh_chart&subdirectory=setup/web_widget_bokeh_chart
 # web_tree_dynamic_colored_field: Dependency for DDMRP
 
 #### OCA/hr-timesheet ####
 # TODO - hr_timesheet_sheet: In v11 timesheets have been moved to Enterprise
+
+#### OCA/sale-workflow ####
+# sale_exception: Allows to flexibly configure exceptions that block sale order approval
+-e git+https://github.com/OCA/sale-workflow.git@11.0#egg=odoo11_addon_sale_exception&subdirectory=setup/sale_exception
+
+#### OCA/purchase-workflow ####
+# purchase_exception: Allows to flexibly configure exceptions that block purchase order approval
+-e git+https://github.com/OCA/purchase-workflow.git@11.0#egg=odoo11_addon_purchase_exception&subdirectory=setup/purchase_exception
+# TO MIGRATE: purchase_tier_validation: Allows to define tiered approval workflows
+#   (https://github.com/OCA/purchase-workflow/pull/481)
+# TO MIGRATE: purchase_order_approved
+#   (https://github.com/OCA/purchase-workflow/pull/492)
 
 #### OCA/account-financial-tools ####
 # account_fiscal_year: Allows to easily filter by fiscal year
@@ -179,8 +195,22 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # TO MIGRATE - mrp_bom_structure_xlsx_level_1
 #   (https://github.com/OCA/manufacture-reporting/tree/10.0/mrp_bom_structure_xlsx_level_1)
 
+#### OCA/reporting-engine ####
+# report_wkhtmltopdf_param: Required for check printing
+-e git+https://github.com/OCA/reporting-engine@11.0#egg=odoo11_addon_report_wkhtmltopdf_param&subdirectory=setup/report_wkhtmltopdf_param
+# report_xlsx: Required to export to XLSX
+-e git+https://github.com/OCA/reporting-engine@11.0#egg=odoo11_addon_report_xlsxm&subdirectory=setup/report_xlsx
+# TO MIGRATE - bi_sql_editor: Allows to flexibly define reports by users with knowledge of SQL
+# (https://github.com/OCA/reporting-engine/pull/162)
+# TO MIGRATE - report_py3o: Allows to build reports based on Libreoffice
+# (https://github.com/OCA/reporting-engine/tree/10.0/report_py3o)
+
+#### OCA/knowledge ####
+# TO MIGRATE - document_wopi: allow online collaborative editing and viewing of office files. This works with LibreOffice online
+(https://github.com/OCA/knowledge/pull/137)
+
 #### Eficent/cryptocurrency ####
-# TO COMPLETE: account_cryptocurrency
+# TO COMPLETE - account_cryptocurrency
 #   (https://github.com/Eficent/cryptocurrency/tree/11.0/account_cryptocurrency)
 
 #### OCA/social ####
