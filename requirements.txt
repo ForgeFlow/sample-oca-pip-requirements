@@ -209,6 +209,13 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # TO MIGRATE - document_wopi: allow online collaborative editing and viewing of office files. This works with LibreOffice online
 (https://github.com/OCA/knowledge/pull/137)
 
+#### OCA/product-attribute ####
+# TO MIGRATE: product_manufacturer 
+#   (https://github.com/OCA/product-attribute/pull/329)
+# TO MIGRATE: product_profile: allows to easily define profiles for products for easy creation
+#   (https://github.com/OCA/product-attribute/tree/10.0/product_profile)
+# TODO: product_profile_sequence: Would allow to introduce a separate product sequence for each product profile.
+
 #### Eficent/cryptocurrency ####
 # TO COMPLETE - account_cryptocurrency
 #   (https://github.com/Eficent/cryptocurrency/tree/11.0/account_cryptocurrency)
