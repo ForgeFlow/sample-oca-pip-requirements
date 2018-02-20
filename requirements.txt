@@ -13,7 +13,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 
 #### OCA/server-auth ####
 # password_security:  set company-level password security requirements
--e git+https://github.com/OCA/server-auth/password_security@11.0#egg=odoo11_addon_password_security&subdirectory=setup/password_security
+-e git+https://github.com/OCA/server-auth@11.0#egg=odoo11_addon_password_security&subdirectory=setup/password_security
 # TO MIGRATE - auth_brute_force: Tracks Authentication Attempts and Prevents Brute-force Attacks
 #   (https://github.com/OCA/server-tools/tree/10.0/auth_brute_force)
 # TO MIGRATE - auth_totp: Multi-factor authentication
@@ -45,9 +45,9 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 
 #### OCA/account-financial-tools ####
 # account_fiscal_year: Allows to easily filter by fiscal year
--e git+https://github.com/OCA/account-financial-tools/account_fiscal_year@11.0#egg=odoo11_addon_account_fiscal_year&subdirectory=setup/account_fiscal_year
+-e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_fiscal_year&subdirectory=setup/account_fiscal_year
 # account_type_menu: adds a menu entry Account Type
--e git+https://github.com/OCA/account-financial-tools/account_type_menu@11.0#egg=odoo11_addon_account_type_menu&subdirectory=setup/account_type_menu
+-e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_type_menu&subdirectory=setup/account_type_menu
 # REVIEW PULL REQUEST - currency_rate_update: Download exchange rates automatically from the Internet.
 #   (https://github.com/OCA/account-financial-tools/pull/579)
 # TODO - account_accountant: Provides accountant menus. Not a big deal, but in v11 has been moved to Enterprise. 
@@ -64,21 +64,45 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 
 #### OCA/account-invoicing ####
 # account_invoice_refund_link:links customer and supplier refunds with the invoice that originate them 
--e git+https://github.com/OCA/account-invoicing/account_invoice_refund_link@11.0#egg=odoo11_addon_account_invoice_refund_link&subdirectory=setup/account_invoice_refund_link
+-e git+https://github.com/OCA/account-invoicing@11.0#egg=odoo11_addon_account_invoice_refund_link&subdirectory=setup/account_invoice_refund_link
 # account_invoice_supplier_ref_unique: checks that a supplier invoice/refund is not entered twice
--e git+https://github.com/OCA/account-invoicing/account_invoice_supplier_ref_unique@11.0#egg=odoo11_addon_account_invoice_supplier_ref_unique&subdirectory=setup/account_invoice_supplier_ref_unique
+-e git+https://github.com/OCA/account-invoicing@11.0#egg=odoo11_addon_account_invoice_supplier_ref_unique&subdirectory=setup/account_invoice_supplier_ref_unique
 
-### OCA/website_cms
+### OCA/website ####
+# website_analytics_piwik: This module allows to simply configure your OCA website for using Piwik.
+-e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_analytics_piwik&subdirectory=setup/website_analytics_piwik
+# website_multi_theme: Allow the website admin to set a different theme for each website
+-e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_multi_theme&subdirectory=setup/website_multi_theme
+# website_legal_page: provide common legal pages needed in any website
+-e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_legal_page&subdirectory=setup/website_legal_page
+# website_cookie_notice: This module adds the cookie notice, according to the european cookie law, to your website.
+-e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_cookie_notice&subdirectory=setup/website_cookie_notice
+# website_cookie_notice: This module adds the cookie notice, according to the european cookie law, to your website.
+-e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_cookie_notice&subdirectory=setup/website_cookie_notice
+# website_anchor_smooth_scroll:  extends the functionality of website links to support smooth scrolling and allow you to have it for free and with zero configuration.
+-e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_anchor_smooth_scroll&subdirectory=setup/website_anchor_smooth_scroll
+# TO REVIEW PR: theme_flexible: Allows to flexibly configure website themes
+#   (https://github.com/OCA/website/pull/421)
+# TO REVIEW PR: website_adv_image_optimization: Improves usability in website design
+#   (https://github.com/OCA/website/pull/422)
+# TO REVIEW PR: website_snippet_preset: Improves usability in website design
+#   (https://github.com/OCA/website/pull/414)
+# TO REVIEW PR: website_snippet_anchor: Improves usability in website design
+#   (https://github.com/OCA/website/pull/420)
+# TO REVIEW PR: website_snippet_data_slider: Improves usability in website design
+#   (https://github.com/OCA/website/pull/401)
+
+### OCA/website_cms ####
 # cms_form: Allows to define front-end forms for every models in a simple way.
--e git+https://github.com/OCA/website-cms/cms_form@11.0#egg=odoo11_addon_cms_form&subdirectory=setup/cms_form
+-e git+https://github.com/OCA/website-cms@11.0#egg=odoo11_addon_cms_form&subdirectory=setup/cms_form
 # cms_status_message: A "status message" is an important message that you want to show to users.
--e git+https://github.com/OCA/website-cms/cms_status_message@11.0#egg=odoo11_addon_cms_status_message&subdirectory=setup/cms_status_message
+-e git+https://github.com/OCA/website-cms@11.0#egg=odoo11_addon_cms_status_message&subdirectory=setup/cms_status_message
 # cms_account_form: Replace portal user's account form with a specific CMS form.
--e git+https://github.com/OCA/website-cms/cms_account_form@11.0#egg=odoo11_addon_cms_account_form&subdirectory=setup/cms_account_form
+-e git+https://github.com/OCA/website-cms@11.0#egg=odoo11_addon_cms_account_form&subdirectory=setup/cms_account_form
 
 #### OCA/account-payment ####
 # account_check_printing_report_base: Base module for check printing
--e git+https://github.com/OCA/account-payment/account_check_printing_report_base@11.0#egg=odoo11_addon_account_check_printing_report_base&subdirectory=setup/account_check_printing_report_base
+-e git+https://github.com/OCA/account-payment@11.0#egg=odoo11_addon_account_check_printing_report_base&subdirectory=setup/account_check_printing_report_base
 # TO MIGRATE - account_check_printing_report_dlt103: Module to print checks using DLT103 format
 #   (https://github.com/OCA/account-payment/tree/10.0/account_check_printing_report_dlt103)
 # TO MIGRATE - account_due_list: Allows to list open receivables and payables
@@ -102,20 +126,68 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # MIGRATING - stock_warehouse_orderpoint_stock_info_unreserved: Dependency for DDMRP
 # MIGRATING - stock_demand_estimate: Dependency for DDMRP
 # MIGRATING - stock_available_unreserved: Dependency for DDMRP
+# stock_request
+-e git+https://github.com/OCA/stock-logistics-warehouse@11.0#egg=odoo11_addon_stock_request&subdirectory=setup/stock_request
+# stock_request
+-e git+https://github.com/OCA/stock-logistics-warehouse@11.0#egg=odoo11_addon_stock_request_purchase&subdirectory=setup/stock_request_purchase
+# TO MIGRATE - account_move_line_product
+# TO MIGRATE - account_move_line_stock_info
+# TO MIGRATE - account_move_line_stock_info
+# TO MIGRATE - stock_inventory_chatter: Allows to put comments on inventory adjustments
+# TO MIGRATE - stock_inventory_discrepancy: Required for proper stock cycle counting
+# TO MIGRATE - stock_inventory_lockdown: Required for proper cycle counting
+# TO MIGRATE - stock_inventory_exclude_sublocation: Required for proper cycle counting
+# TO MIGRATE - stock_inventory_verification_request: Required for proper cycle counting
+# TO MIGRATE - stock_quant_reserved_qty_uom: Required for proper inventory management
+
+#### OCA/stock-logistics-workflow ####
+# stock_no_negative: Does not allow negative stocks to exist
+-e git+https://github.com/OCA/stock-logistics-workflow@11.0#egg=odoo11_addon_stock_no_negative&subdirectory=setup/stock_no_negative
+# stock_request_purchase
+# stock_pack_operation_auto_fill: Improves usability in stock transfers
+-e git+https://github.com/OCA/stock-logistics-workflow@11.0#egg=odoo11_addon_stock_pack_operation_auto_fill&subdirectory=setup/stock_pack_operation_auto_fill
+# TO MIGRATE - stock_disable_force_availability_button
+#   (https://github.com/OCA/stock-logistics-workflow/tree/10.0/stock_disable_force_availability_button)
+# TO REVIEW PR - stock_picking_show_backorder
+#   (https://github.com/OCA/stock-logistics-workflow/pull/398)
+# TO REVIEW PR - stock_picking_show_return
+#   (https://github.com/OCA/stock-logistics-workflow/pull/396)
+# TO MIGRATE - stock_split_picking
+#   (https://github.com/OCA/stock-logistics-workflow/tree/10.0/stock_split_picking)
+# TO REVIEW PR: stock_picking_mass_assign: Improves usability in stock transfers
+#   (https://github.com/OCA/stock-logistics-workflow/pull/390)
 
 #### OCA/manufacture ####
-# MIGRATING - mrp_mto_with_stock
+# MIGRATING - mrp_mto_with_stock: Required for DDMRP
 #   (https://github.com/OCA/manufacture/pull/255)
 # MIGRATING - mrp_bom_location
+# TO MIGRATE - mrp_bom_current_stock: Required for DDMRP
+#   (https://github.com/OCA/manufacture-reporting/pull/39)
+# TO MIGRATE - mrp_production_putaway_strategy: Puts finished products to the appropriate bin location
+    (https://github.com/OCA/manufacture/pull/246)
+# TO MIGRATE - mrp_production_raw_material_procurement_group: Allows to create 1 transfer of raw materials to produce for each Manufacturing Order
+    (https://github.com/OCA/manufacture/tree/9.0/mrp_production_raw_material_procurement_group)
+# TO MIGRATE - mrp_production_request: Allows more flexibility to decide quantities to manufacture
+    (https://github.com/OCA/manufacture/tree/9.0/mrp_production_raw_material_procurement_group)
 
 #### OCA/manufacture-reporting ####
 # report_mrp_bom_matrix: Related to DDMRP
--e git+https://github.com/OCA/manufacture-reporting/mrp_bom_matrix_report@11.0#egg=odoo11_addon_mrp_bom_matrix_report&subdirectory=setup/mrp_bom_matrix_report
+-e git+https://github.com/OCA/manufacture-reporting@11.0#egg=odoo11_addon_mrp_bom_matrix_report&subdirectory=setup/mrp_bom_matrix_report
 # MIGRATING - mrp_bom_current_stock
+# TO REVIEW PR - mrp_bom_structure_xlsx
+#   (https://github.com/OCA/manufacture-reporting/pull/33)
+# TO MIGRATE - mrp_bom_structure_xlsx_level_1
+#   (https://github.com/OCA/manufacture-reporting/tree/10.0/mrp_bom_structure_xlsx_level_1)
 
 #### Eficent/cryptocurrency ####
 # TO COMPLETE: account_cryptocurrency
 #   (https://github.com/Eficent/cryptocurrency/tree/11.0/account_cryptocurrency)
+
+#### OCA/social ####
+# TO MIGRATE - base_search_mail_content: Allows to search for content of emails
+#   (https://github.com/OCA/social/tree/10.0/base_search_mail_content)
+# mail_debrand: Removes Odoo branding
+
 
 #### OCA/dddmrp ####
 ## MIGRATING AT THIS MOMENT from https://github.com/Eficent/ddmrp
@@ -124,6 +196,13 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # ddmrp_adjustment
 # ddmrp_product_replace
 
+#### Eficent/stock-rma ####
+## MIGRATING AT THIS MOMENT 
+# rma
+# TODO: add setup.py https://github.com/Eficent/stock-rma/tree/11.0/rma
+# rma_account
+# rma_purchase
+# rma_sale
 
 
 
