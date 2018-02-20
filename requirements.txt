@@ -31,7 +31,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/mis-builder.git@11.0#egg=odoo11_addon_mis_builder_demo&subdirectory=setup/mis_builder_demo
 
 #### OCA/hr ####
-# hr_public_holidays: Allows to manage public holidays by country
+# TO REVIEW PR - hr_public_holidays: Allows to manage public holidays by country
 #   (https://github.com/OCA/hr/pull/401)
 
 #### OCA/web ####
