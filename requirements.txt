@@ -19,20 +19,58 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # TO MIGRATE - auth_totp_password_security: glue module
 #   (https://github.com/OCA/server-tools/tree/10.0/auth_totp_password_security)
 
-
-#### OCA/server-tools ####
-
 #### OCA/mis-builder ####
 -e git+https://github.com/OCA/mis-builder.git@11.0#egg=odoo11_addon_mis_builder&subdirectory=setup/mis_builder
 -e git+https://github.com/OCA/mis-builder.git@11.0#egg=odoo11_addon_mis_builder_budget&subdirectory=setup/mis_builder_budget
 -e git+https://github.com/OCA/mis-builder.git@11.0#egg=odoo11_addon_mis_builder_demo&subdirectory=setup/mis_builder_demo
 
-#OCA/web
+#### OCA/web ####
 -e git+https://github.com/OCA/web.git@11.0#egg=odoo11_addon_web_responsive&subdirectory=setup/web_responsive
 -e git+https://github.com/OCA/web.git@11.0#egg=odoo11_addon_web_environment_ribbon&subdirectory=setup/web_environment_ribbon
 -e git+https://github.com/OCA/web.git@11.0#egg=odoo11_addon_web_sheet_full_width&subdirectory=setup/web_sheet_full_width
 
-#OCA/account-financial-reporting
+#### OCA/account-financial-tools ####
+# account_fiscal_year: Allows to easily filter by fiscal year
+-e git+https://github.com/OCA/account-financial-tools/tree/11.0/account_fiscal_year#egg=odoo11_addon_account_fiscal_year&subdirectory=setup/account_fiscal_year
+# account_type_menu: adds a menu entry Account Type
+-e git+https://github.com/OCA/account-financial-tools/tree/11.0/account_type_menu#egg=odoo11_addon_account_type_menu&subdirectory=setup/account_type_menu
+# REVIEW PULL REQUEST - currency_rate_update: Download exchange rates automatically from the Internet.
+#   (https://github.com/OCA/account-financial-tools/pull/579)
+
+#### OCA/account-financial-reporting ####
 -e git+https://github.com/OCA/account-financial-reporting.git@11.0#egg=odoo11_addon_account_financial_report&subdirectory=setup/account_financial_report
 -e git+https://github.com/OCA/account-financial-reporting.git@11.0#egg=odoo11_addon_account_tax_balance&subdirectory=setup/account_tax_balance
+# TO MIGRATE: customer_activity_statement
+#   (https://github.com/OCA/account-financial-reporting/tree/10.0/customer_activity_statement)
+# TO MIGRATE: customer_outstanding_statement
+#   (https://github.com/OCA/account-financial-reporting/tree/10.0/customer_outstanding_statement)
+
+#### OCA/account-invoicing ####
+# account_invoice_refund_link:links customer and supplier refunds with the invoice that originate them 
+-e git+https://github.com/OCA/account-invoicing/tree/11.0/account_invoice_refund_link#egg=odoo11_addon_account_invoice_refund_link&subdirectory=setup/account_invoice_refund_link
+# account_invoice_supplier_ref_unique: checks that a supplier invoice/refund is not entered twice
+-e git+https://github.com/OCA/account-invoicing/tree/11.0/account_invoice_supplier_ref_unique#egg=odoo11_addon_account_invoice_supplier_ref_unique&subdirectory=setup/account_invoice_supplier_ref_unique
+
+### OCA/website_cms
+
+
+
+#### OCA/account-payment ####
+# account_check_printing_report_base: Base module for check printing
+-e git+https://github.com/OCA/account-payment/tree/11.0/account_check_printing_report_base#egg=odoo11_addon_account_check_printing_report_base&subdirectory=setup/account_check_printing_report_base
+# TO MIGRATE - account_check_printing_report_dlt103: Module to print checks using DLT103 format
+#   (https://github.com/OCA/account-payment/tree/10.0/account_check_printing_report_dlt103)
+# TO MIGRATE - account_due_list: Allows to list open receivables and payables
+# (https://github.com/OCA/account-payment/tree/10.0/account_due_list)
+# TO MIGRATE - account_due_list_aging_comments: Allows to add aging comments to open receivables and payables.
+# (https://github.com/OCA/account-payment/tree/10.0/account_due_list_aging_comments)
+# TO MIGRATE - account_due_list_days_overdue: Shows time buckets in the due list
+# (https://github.com/OCA/account-payment/tree/10.0/account_due_list_days_overdue)
+# TO MIGRATE - account_partner_reconcile: adds a button "Match Payments" in the customer & suppliers form view to allow to start the matching of invoices & payments for that partner.
+# (https://github.com/OCA/account-payment/tree/10.0/account_partner_reconcile)
+# TO MIGRATE - account_payment_show_invoice: show the paid invoices related to the payments
+# (https://github.com/OCA/account-payment/tree/10.0/account_payment_show_invoice)
+
+
+
 
