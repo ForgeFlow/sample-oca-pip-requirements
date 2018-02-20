@@ -52,6 +52,13 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/account-invoicing/tree/11.0/account_invoice_supplier_ref_unique#egg=odoo11_addon_account_invoice_supplier_ref_unique&subdirectory=setup/account_invoice_supplier_ref_unique
 
 ### OCA/website_cms
+# cms_form: Allows to define front-end forms for every models in a simple way.
+-e git+https://github.com/OCA/website-cms/tree/11.0/cms_form#egg=odoo11_addon_cms_form&subdirectory=setup/cms_form
+# cms_status_message: A "status message" is an important message that you want to show to users.
+-e git+https://github.com/OCA/website-cms/tree/11.0/cms_status_message#egg=odoo11_addon_cms_status_message&subdirectory=setup/cms_status_message
+# cms_account_form: Replace portal user's account form with a specific CMS form.
+-e git+https://github.com/OCA/website-cms/tree/11.0/cms_account_form
+
 
 
 
