@@ -1,11 +1,28 @@
 https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
-# OCA/server-ux
+#### OCA/server-ux ####
 -e git+https://github.com/OCA/server-ux.git@11.0#egg=odoo11_addon_date_range&subdirectory=setup/date_range
 -e git+https://github.com/OCA/server-ux.git@11.0#egg=odoo11_addon_base_technical_features&subdirectory=setup/base_technical_features
-# OCA/server-tools
--e git+https://github.com/OCA/server-tools.git@11.0#egg=odoo11_addon_auditlog&subdirectory=setup/auditlog
 
-# OCA/mis-builder
+#### OCA/server-tools ####
+# auditlog: Audit who reads/writes/deletes/creates records on any model
+-e git+https://github.com/OCA/server-tools.git@11.0#egg=odoo11_addon_auditlog&subdirectory=setup/auditlog
+# PENDING - auth_supplier - allows the portal user to create an account as a supplier or customer
+#   (https://github.com/OCA/server-tools/tree/10.0/auth_supplier)
+
+#### OCA/server-auth ####
+# password_security:  set company-level password security requirements
+-e git+https://github.com/OCA/server-auth/tree/11.0/password_security@11.0#egg=odoo11_addon_password_security&subdirectory=setup/password_security
+# TO MIGRATE - auth_brute_force: Tracks Authentication Attempts and Prevents Brute-force Attacks
+#   (https://github.com/OCA/server-tools/tree/10.0/auth_brute_force)
+# TO MIGRATE - auth_totp: Multi-factor authentication
+#   (https://github.com/OCA/server-tools/tree/10.0/auth_totp)
+# TO MIGRATE - auth_totp_password_security: glue module
+#   (https://github.com/OCA/server-tools/tree/10.0/auth_totp_password_security)
+
+
+#### OCA/server-tools ####
+
+#### OCA/mis-builder ####
 -e git+https://github.com/OCA/mis-builder.git@11.0#egg=odoo11_addon_mis_builder&subdirectory=setup/mis_builder
 -e git+https://github.com/OCA/mis-builder.git@11.0#egg=odoo11_addon_mis_builder_budget&subdirectory=setup/mis_builder_budget
 -e git+https://github.com/OCA/mis-builder.git@11.0#egg=odoo11_addon_mis_builder_demo&subdirectory=setup/mis_builder_demo
