@@ -64,9 +64,6 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # cms_account_form: Replace portal user's account form with a specific CMS form.
 -e git+https://github.com/OCA/website-cms/tree/11.0/cms_account_form
 
-
-
-
 #### OCA/account-payment ####
 # account_check_printing_report_base: Base module for check printing
 -e git+https://github.com/OCA/account-payment/tree/11.0/account_check_printing_report_base#egg=odoo11_addon_account_check_printing_report_base&subdirectory=setup/account_check_printing_report_base
@@ -83,6 +80,9 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # TO MIGRATE - account_payment_show_invoice: show the paid invoices related to the payments
 # (https://github.com/OCA/account-payment/tree/10.0/account_payment_show_invoice)
 
+#### Eficent/cryptocurrency ####
+# TO COMPLETE: account_cryptocurrency
+https://github.com/Eficent/cryptocurrency/tree/11.0/account_cryptocurrency
 
 
 
