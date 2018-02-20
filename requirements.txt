@@ -29,6 +29,10 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/web.git@11.0#egg=odoo11_addon_web_environment_ribbon&subdirectory=setup/web_environment_ribbon
 -e git+https://github.com/OCA/web.git@11.0#egg=odoo11_addon_web_sheet_full_width&subdirectory=setup/web_sheet_full_width
 
+#### OCA/hr-timesheet ####
+# TODO - hr_timesheet_sheet: In v11 timesheets have been moved to Enterprise
+
+
 #### OCA/account-financial-tools ####
 # account_fiscal_year: Allows to easily filter by fiscal year
 -e git+https://github.com/OCA/account-financial-tools/tree/11.0/account_fiscal_year#egg=odoo11_addon_account_fiscal_year&subdirectory=setup/account_fiscal_year
@@ -36,6 +40,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/account-financial-tools/tree/11.0/account_type_menu#egg=odoo11_addon_account_type_menu&subdirectory=setup/account_type_menu
 # REVIEW PULL REQUEST - currency_rate_update: Download exchange rates automatically from the Internet.
 #   (https://github.com/OCA/account-financial-tools/pull/579)
+# TODO - account_accountant: Provides accountant menus. Not a big deal, but in v11 has been moved to Enterprise. 
 
 #### OCA/account-financial-reporting ####
 -e git+https://github.com/OCA/account-financial-reporting.git@11.0#egg=odoo11_addon_account_financial_report&subdirectory=setup/account_financial_report
