@@ -122,6 +122,8 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_snippet_anchor&subdirectory=setup/website_snippet_anchor
 # TO REVIEW PR: website_snippet_data_slider: Improves usability in website design
 #   (https://github.com/OCA/website/pull/401)
+# TO REVIEW pr: website_odoo_debranding: Removes references to odoo in the website
+#   (https://github.com/OCA/website/pull/428
 
 ### OCA/website_cms ####
 # cms_form: Allows to define front-end forms for every models in a simple way.
