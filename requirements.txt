@@ -88,10 +88,10 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/account-financial-reporting.git@11.0#egg=odoo11_addon_account_financial_report&subdirectory=setup/account_financial_report
 # account_tax_balance
 -e git+https://github.com/OCA/account-financial-reporting.git@11.0#egg=odoo11_addon_account_tax_balance&subdirectory=setup/account_tax_balance
-# MIGRATING: customer_activity_statement: 
-#   (https://github.com/OCA/account-financial-reporting/pull/389)
-# MIGRATING: customer_outstanding_statement: provides details of all outstanding customer receivables up to a particular date.
-#   (https://github.com/OCA/account-financial-reporting/pull/388)
+# customer_activity_statement: details of all activity on the customer receivables between two selected dates. This includes all invoices, refunds and payments. 
+-e git+https://github.com/OCA/account-financial-reporting.git@11.0#egg=odoo11_addon_customer_activity_statement&subdirectory=setup/customer_activity_statement
+# customer_outstanding_statement: provides details of all outstanding customer receivables up to a particular date.
+-e git+https://github.com/OCA/account-financial-reporting.git@11.0#egg=odoo11_addon_customer_outstanding_statement&subdirectory=setup/customer_outstanding_statement
 
 #### OCA/account-invoicing ####
 # account_invoice_refund_link:links customer and supplier refunds with the invoice that originate them 
@@ -118,8 +118,8 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 #   (https://github.com/OCA/website/pull/422)
 # TO REVIEW PR: website_snippet_preset: Improves usability in website design
 #   (https://github.com/OCA/website/pull/414)
-# TO REVIEW PR: website_snippet_anchor: Improves usability in website design
-#   (https://github.com/OCA/website/pull/420)
+# website_snippet_anchor: Improves usability in website design
+-e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_snippet_anchor&subdirectory=setup/website_snippet_anchor
 # TO REVIEW PR: website_snippet_data_slider: Improves usability in website design
 #   (https://github.com/OCA/website/pull/401)
 
@@ -147,14 +147,11 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # TO MIGRATE - account_payment_show_invoice: show the paid invoices related to the payments
 # (https://github.com/OCA/account-payment/tree/10.0/account_payment_show_invoice)
 
-#
-# (Content Above reviewed on 2018/02/22) 
-#
-
 #### OCA/stock-logistics-warehouse ####
 # TO REVIEW PR - stock_putaway_product: Dependency for DDMRP
 #   New type of putaway strategy where users can set a specific stock location per product
 # (https://github.com/OCA/stock-logistics-warehouse/pull/380)
+# depends on (https://github.com/OCA/stock-logistics-warehouse/pull/379) we need to add module when merged
 # TO MIGRATE - stock_orderpoint_manual_procurement: Dependency for DDMRP
 #   Allows users to manually start procurements from the list of reordering rules, based on the quantity that is recommended to be procured.
 #
@@ -204,8 +201,8 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/stock-logistics-workflow@11.0#egg=odoo11_addon_stock_pack_operation_auto_fill&subdirectory=setup/stock_pack_operation_auto_fill
 # TO MIGRATE - stock_disable_force_availability_button: Creates a security group that limits the visibility of "Force availability" button on stock operations to those that belong to this group. 
 #   (https://github.com/OCA/stock-logistics-workflow/tree/10.0/stock_disable_force_availability_button)
-# TO REVIEW PR - stock_picking_show_backorder:Provide a new field on stock pickings, allowing to see the backorders associated to a picking.
-#   (https://github.com/OCA/stock-logistics-workflow/pull/398)
+# stock_picking_show_backorder:Provide a new field on stock pickings, allowing to see the backorders associated to a picking.
+-e git+https://github.com/OCA/stock-logistics-workflow@11.0#egg=odoo11_addon_stock_picking_show_backorder&subdirectory=setup/stock_picking_show_backorder
 # TO REVIEW PR - stock_picking_show_return:  adds one tab in the pickings form view to display the returns pickings related to the current one.
 #   (https://github.com/OCA/stock-logistics-workflow/pull/396)
 # TO MIGRATE - stock_split_picking: adds a "Split" button on the outgoing pickings form.
@@ -254,8 +251,8 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 (https://github.com/OCA/knowledge/pull/137)
 
 #### OCA/product-attribute ####
-# MIGRATING: product_manufacturer: Adds manufacturers and attributes on the product form.
-#   (https://github.com/OCA/product-attribute/pull/329)
+# product_manufacturer: Adds manufacturers and attributes on the product form.
+-e git+https://github.com/OCA/product-attribute@11.0#egg=odoo11_addon_product_manufacturer&subdirectory=setup/product_manufacturer
 # TO MIGRATE: product_profile: allows to easily define profiles for products for easy creation
 #   (https://github.com/OCA/product-attribute/tree/10.0/product_profile)
 # TODO: product_profile_sequence: Would allow to introduce a separate product sequence for each product profile.
