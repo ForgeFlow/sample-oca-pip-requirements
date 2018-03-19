@@ -250,7 +250,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 
 #### OCA/knowledge ####
 # TO MIGRATE - document_wopi: allow online collaborative editing and viewing of office files. This works with LibreOffice online
-(https://github.com/OCA/knowledge/pull/137)
+# (https://github.com/OCA/knowledge/pull/137)
 
 #### OCA/product-attribute ####
 # product_manufacturer: Adds manufacturers and attributes on the product form.
