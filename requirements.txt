@@ -31,7 +31,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 
 #### OCA/server-brand ####
 # res_config_settings_enterprise_remove: Removes enterprise-only features from all settings views
--e git+https://github.com/OCA/server-brandauth@11.0#egg=odoo11_addon_res_config_settings_enterprise_remove&subdirectory=setup/res_config_settings_enterprise_remove
+-e git+https://github.com/OCA/server-brand@11.0#egg=odoo11_addon_res_config_settings_enterprise_remove&subdirectory=setup/res_config_settings_enterprise_remove
 # disable_odoo_online:  deactivates all bindings to odoo.com that come with the standard code
 # (https://github.com/OCA/server-brand/pull/1)
 
