@@ -77,8 +77,8 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/purchase-workflow.git@11.0#egg=odoo11_addon_purchase_exception&subdirectory=setup/purchase_exception
 # TO MIGRATE: purchase_tier_validation: Allows to define tiered approval workflows
 #   (https://github.com/OCA/purchase-workflow/pull/481)
-# purchase_order_approved: Adds a new state Approved in purchase orders before the Purchase Order state.
--e git+https://github.com/OCA/purchase-workflow.git@11.0#egg=odoo11_addon_purchase_order_approved&subdirectory=setup/purchase_order_approved
+# TO MIGRATE: purchase_order_approved: Adds a new state Approved in purchase orders before the Purchase Order state.
+# -e git+https://github.com/OCA/purchase-workflow.git@11.0#egg=odoo11_addon_purchase_order_approved&subdirectory=setup/purchase_order_approved
 
 #### OCA/account-financial-tools ####
 # account_fiscal_year: Allows to easily filter by fiscal year
