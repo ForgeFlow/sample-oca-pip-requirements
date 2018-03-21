@@ -272,18 +272,13 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 
 #### OCA/currency ####
 # currency_rate_inverted
--e git+https://github.com/Eficent/currency@11.0-mig-currency_rate_inverted#egg=odoo11_addon_currency_rate_inverted&subdirectory=setup/currency_rate_inverted
+-e git+https://github.com/OCA/currency@11.0#egg=odoo11_addon_currency_rate_inverted&subdirectory=setup/currency_rate_inverted
 # currency_rate_update
--e git+https://github.com/Eficent/currency@11.0-mig-account_rate_update#egg=odoo11_addon_currency_rate_update&subdirectory=setup/currency_rate_update
-# currency_rate_update_inverted
--e git+https://github.com/Eficent/currency@11.0-mig-currency_rate_update_inverted#egg=odoo11_addon_currency_rate_update_inverted&subdirectory=setup/currency_rate_update_inverted
+-e git+https://github.com/OCA/currency@11.0#egg=odoo11_addon_currency_rate_update&subdirectory=setup/currency_rate_update
 # account_fx_spot
 -e git+https://github.com/Eficent/currency@11.0-add-account_fx_spot#egg=odoo11_addon_account_fx_spot&subdirectory=setup/account_fx_spot
-
-
-#### Eficent/cryptocurrency ####
-# TO COMPLETE - account_cryptocurrency
-#   (https://github.com/Eficent/cryptocurrency/tree/11.0/account_cryptocurrency)
+# account_cryptocurrency
+-e git+https://github.com/Eficent/currency@11.0-add-account_cryptocurrency#egg=odoo11_addon_account_cryptocurrency&subdirectory=setup/account_cryptocurrency
 
 #### OCA/social ####
 # TO MIGRATE - base_search_mail_content: Allows to search for content of emails
