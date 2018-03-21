@@ -253,7 +253,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # report_wkhtmltopdf_param: Required for check printing
 -e git+https://github.com/OCA/reporting-engine@11.0#egg=odoo11_addon_report_wkhtmltopdf_param&subdirectory=setup/report_wkhtmltopdf_param
 # report_xlsx: Required to export to XLSX
--e git+https://github.com/OCA/reporting-engine@11.0#egg=odoo11_addon_report_xlsxm&subdirectory=setup/report_xlsx
+-e git+https://github.com/OCA/reporting-engine@11.0#egg=odoo11_addon_report_xls&subdirectory=setup/report_xlsx
 # TO MIGRATE - bi_sql_editor: Allows to flexibly define reports by users with knowledge of SQL
 # (https://github.com/OCA/reporting-engine/pull/162)
 # TO MIGRATE - report_py3o: Allows to build reports based on Libreoffice
