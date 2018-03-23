@@ -292,8 +292,10 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # TO MIGRATE - base_search_mail_content: Allows to search for content of emails
 #   (https://github.com/OCA/social/tree/10.0/base_search_mail_content)
 # TO MIGRATE - mail_debrand: Removes Odoo branding
-#
 
+#### OCA/l10n-usa
+# l10n_us: US GAAP Compliant Chart of Accounts
+-e git+https://github.com/Eficent/l10n-usa@11.0-l10n_us_gaap#egg=odoo11_addon_l10n_us&subdirectory=setup/l10n_us
 
 #### OCA/ddmrp ####
 ## MIGRATING AT THIS MOMENT from https://github.com/Eficent/ddmrp
