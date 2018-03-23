@@ -1,7 +1,3 @@
-#### OCA/l10n-usa
-# l10n_us: US GAAP Compliant Chart of Accounts
--e git+https://github.com/Eficent/l10n-usa@11.0-l10n_us_gaap#egg=odoo11_addon_l10n_us&subdirectory=setup/l10n_us
-
 https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 #### OCA/server-ux ####
 # date_range: Date range filtering in tree views
@@ -291,6 +287,10 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/Eficent/currency@11.0-add-account_cryptocurrency#egg=odoo11_addon_account_cryptocurrency&subdirectory=setup/account_cryptocurrency
 # currency_rate_update_cmc: Downloads crypto currency rates from CoinMarketCap
 -e git+https://github.com/Eficent/currency@11.0-add-currency_rate_update_coinmarketcap#egg=odoo11_addon_currency_rate_update_cmc&subdirectory=setup/currency_rate_update_cmc
+
+#### OCA/l10n-usa
+# l10n_us_gaap: US GAAP Sample Chart of Accounts
+-e git+https://github.com/Eficent/l10n-usa@11.0-l10n_us_gaap#egg=odoo11_addon_l10n_us_gaap&subdirectory=setup/l10n_us_gaap
 
 #### OCA/social ####
 # TO MIGRATE - base_search_mail_content: Allows to search for content of emails
