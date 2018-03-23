@@ -85,9 +85,14 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_fiscal_year&subdirectory=setup/account_fiscal_year
 # account_type_menu: adds a menu entry Account Type
 -e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_type_menu&subdirectory=setup/account_type_menu
-# REVIEW PULL REQUEST - currency_rate_update: Download exchange rates automatically from the Internet.
-#   (https://github.com/OCA/account-financial-tools/pull/579)
 # TODO - account_accountant: Provides accountant menus. Not a big deal, but in v11 has been moved to Enterprise. 
+# account_group_menu: adds a menu entry Account Group
+-e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_group_menu&subdirectory=setup/account_group_menu
+# account_tag_menu: adds a menu entry Account Tag
+-e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_tag_menu&subdirectory=setup/account_tag_menu
+# account_loan: Allows to manage loans
+-e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_loan&subdirectory=setup/account_loan
+
 
 #### OCA/account-financial-reporting ####
 # account_financial_report
