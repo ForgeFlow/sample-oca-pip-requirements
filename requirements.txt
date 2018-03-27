@@ -35,6 +35,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # disable_odoo_online:  deactivates all bindings to odoo.com that come with the standard code
 -e git+https://github.com/OCA/server-brand@11.0#egg=odoo11_addon_disable_odoo_online&subdirectory=setup/disable_odoo_online
 
+
 #### OCA/mis-builder ####
 # Management Information System reports for Odoo: easily build super fast, beautiful, custom reports such as P&L, Balance Sheets and more.
 -e git+https://github.com/OCA/mis-builder.git@11.0#egg=odoo11_addon_mis_builder&subdirectory=setup/mis_builder
@@ -80,14 +81,20 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # purchase_order_approved: Adds a new state Approved in purchase orders before the Purchase Order state.
 -e git+https://github.com/OCA/purchase-workflow.git@11.0#egg=odoo11_addon_purchase_order_approved&subdirectory=setup/purchase_order_approved
 
+
 #### OCA/account-financial-tools ####
 # account_fiscal_year: Allows to easily filter by fiscal year
 -e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_fiscal_year&subdirectory=setup/account_fiscal_year
 # account_type_menu: adds a menu entry Account Type
 -e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_type_menu&subdirectory=setup/account_type_menu
-# REVIEW PULL REQUEST - currency_rate_update: Download exchange rates automatically from the Internet.
-#   (https://github.com/OCA/account-financial-tools/pull/579)
 # TODO - account_accountant: Provides accountant menus. Not a big deal, but in v11 has been moved to Enterprise. 
+# account_group_menu: adds a menu entry Account Group
+-e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_group_menu&subdirectory=setup/account_group_menu
+# account_tag_menu: adds a menu entry Account Tag
+-e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_tag_menu&subdirectory=setup/account_tag_menu
+# account_loan: Allows to manage loans
+-e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_loan&subdirectory=setup/account_loan
+
 
 #### OCA/account-financial-reporting ####
 # account_financial_report
@@ -135,6 +142,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 ### OCA/website-themes ####
 # website_theme_flexible: Allows to flexibly configure website themes
 -e git+https://github.com/OCA/website-themes@11.0#egg=odoo11_addon_website_theme_flexible&subdirectory=setup/website_theme_flexible
+
 
 ### OCA/website-cms ####
 # cms_form: Allows to define front-end forms for every models in a simple way.
@@ -255,7 +263,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # report_wkhtmltopdf_param: Required for check printing
 -e git+https://github.com/OCA/reporting-engine@11.0#egg=odoo11_addon_report_wkhtmltopdf_param&subdirectory=setup/report_wkhtmltopdf_param
 # report_xlsx: Required to export to XLSX
--e git+https://github.com/OCA/reporting-engine@11.0#egg=odoo11_addon_report_xlsxm&subdirectory=setup/report_xlsx
+-e git+https://github.com/OCA/reporting-engine@11.0#egg=odoo11_addon_report_xls&subdirectory=setup/report_xlsx
 # TO MIGRATE - bi_sql_editor: Allows to flexibly define reports by users with knowledge of SQL
 # (https://github.com/OCA/reporting-engine/pull/162)
 # TO MIGRATE - report_py3o: Allows to build reports based on Libreoffice
@@ -270,18 +278,30 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/product-attribute@11.0#egg=odoo11_addon_product_manufacturer&subdirectory=setup/product_manufacturer
 # TO MIGRATE: product_profile: allows to easily define profiles for products for easy creation
 #   (https://github.com/OCA/product-attribute/tree/10.0/product_profile)
-# TODO: product_profile_sequence: Would allow to introduce a separate product sequence for each product profile.
+# TODO: product_sequence: Would allow to introduce a separate product sequence for each product category.
+-e git+https://github.com/Eficent/product-attribute@11.0-mig/imp-product_sequence#egg=odoo11_addon_product_sequence&subdirectory=setup/product_sequence
 
-#### Eficent/cryptocurrency ####
-# TO COMPLETE - account_cryptocurrency
-#   (https://github.com/Eficent/cryptocurrency/tree/11.0/account_cryptocurrency)
+
+#### OCA/currency ####
+# currency_rate_inverted
+-e git+https://github.com/OCA/currency@11.0#egg=odoo11_addon_currency_rate_inverted&subdirectory=setup/currency_rate_inverted
+# currency_rate_update
+-e git+https://github.com/OCA/currency@11.0#egg=odoo11_addon_currency_rate_update&subdirectory=setup/currency_rate_update
+# account_fx_spot
+-e git+https://github.com/Eficent/currency@11.0-add-account_fx_spot#egg=odoo11_addon_account_fx_spot&subdirectory=setup/account_fx_spot
+# account_cryptocurrency
+-e git+https://github.com/Eficent/currency@11.0-add-account_cryptocurrency#egg=odoo11_addon_account_cryptocurrency&subdirectory=setup/account_cryptocurrency
+# currency_rate_update_cmc: Downloads crypto currency rates from CoinMarketCap
+-e git+https://github.com/Eficent/currency@11.0-add-currency_rate_update_coinmarketcap#egg=odoo11_addon_currency_rate_update_cmc&subdirectory=setup/currency_rate_update_cmc
+
+#### OCA/l10n-usa
+# l10n_us_gaap: US GAAP Sample Chart of Accounts
+-e git+https://github.com/Eficent/l10n-usa@11.0-l10n_us_gaap#egg=odoo11_addon_l10n_us_gaap&subdirectory=setup/l10n_us_gaap
 
 #### OCA/social ####
 # TO MIGRATE - base_search_mail_content: Allows to search for content of emails
 #   (https://github.com/OCA/social/tree/10.0/base_search_mail_content)
 # TO MIGRATE - mail_debrand: Removes Odoo branding
-#
-
 
 #### OCA/ddmrp ####
 ## MIGRATING AT THIS MOMENT from https://github.com/Eficent/ddmrp
