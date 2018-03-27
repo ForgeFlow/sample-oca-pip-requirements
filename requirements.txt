@@ -31,9 +31,9 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 
 #### OCA/server-brand ####
 # res_config_settings_enterprise_remove: Removes enterprise-only features from all settings views
--e git+https://github.com/OCA/server-brandauth@11.0#egg=odoo11_addon_res_config_settings_enterprise_remove&subdirectory=setup/res_config_settings_enterprise_remove
+-e git+https://github.com/OCA/server-brand@11.0#egg=odoo11_addon_res_config_settings_enterprise_remove&subdirectory=setup/res_config_settings_enterprise_remove
 # disable_odoo_online:  deactivates all bindings to odoo.com that come with the standard code
-# (https://github.com/OCA/server-brand/pull/1)
+-e git+https://github.com/OCA/server-brand@11.0#egg=odoo11_addon_disable_odoo_online&subdirectory=setup/disable_odoo_online
 
 #### OCA/mis-builder ####
 # Management Information System reports for Odoo: easily build super fast, beautiful, custom reports such as P&L, Balance Sheets and more.
@@ -118,20 +118,23 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_cookie_notice&subdirectory=setup/website_cookie_notice
 # website_anchor_smooth_scroll:  extends the functionality of website links to support smooth scrolling and allow you to have it for free and with zero configuration.
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_anchor_smooth_scroll&subdirectory=setup/website_anchor_smooth_scroll
-# TO REVIEW PR: website_adv_image_optimization: Improves usability in website design
-#   (https://github.com/OCA/website/pull/422)
-# TO REVIEW PR: website_snippet_preset: Improves usability in website design
-#   (https://github.com/OCA/website/pull/414)
+# website_adv_image_optimization: Improves usability in website design
+-e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_adv_image_optimization&subdirectory=setup/website_adv_image_optimization
+# website_snippet_preset: Improves usability in website design
+-e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_snippet_preset&subdirectory=setup/website_snippet_preset
 # website_snippet_anchor: Improves usability in website design
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_snippet_anchor&subdirectory=setup/website_snippet_anchor
 # TO REVIEW PR: website_snippet_data_slider: Improves usability in website design
 #   (https://github.com/OCA/website/pull/401)
 # website_odoo_debranding: Removes references to odoo in the website
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_odoo_debranding&subdirectory=setup/website_odoo_debranding
+# TO REVIEW PR: website_js_below_the_fold: moves Javascript assets to the bottom of the page
+#   (https://github.com/OCA/website/pull/438)
+
 
 ### OCA/website-themes ####
-# TO REVIEW PR: theme_flexible: Allows to flexibly configure website themes
-#   (https://github.com/OCA/website-themes/pull/1)
+# website_theme_flexible: Allows to flexibly configure website themes
+-e git+https://github.com/OCA/website-themes@11.0#egg=odoo11_addon_website_theme_flexible&subdirectory=setup/website_theme_flexible
 
 ### OCA/website-cms ####
 # cms_form: Allows to define front-end forms for every models in a simple way.
@@ -147,7 +150,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # TO MIGRATE - account_check_printing_report_dlt103: Module to print checks using DLT103 format
 #   (https://github.com/OCA/account-payment/tree/10.0/account_check_printing_report_dlt103)
 # MIGRATING - account_due_list: Allows to list open receivables and payables
-# (https://github.com/OCA/account-payment/pull/170)
+-e git+https://github.com/OCA/account-payment@11.0#egg=odoo11_addon_account_due_list&subdirectory=setup/account_due_list
 # TO MIGRATE - account_due_list_aging_comments: Allows to add aging comments to open receivables and payables.
 # (https://github.com/OCA/account-payment/tree/10.0/account_due_list_aging_comments)
 # TO MIGRATE - account_due_list_days_overdue: Shows time buckets in the due list
@@ -169,7 +172,6 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/stock-logistics-warehouse@11.0#egg=odoo11_addon_stock_orderpoint_manual_procurement&subdirectory=setup/stock_orderpoint_manual_procurement
 # stock_orderpoint_uom: Dependency for DDMRP
 #   Allows users to define what unit of measure should be used in procurements created from minimum stock rules.
-#   ON ENHANCE (https://github.com/OCA/stock-logistics-warehouse/pull/389)
 -e git+https://github.com/OCA/stock-logistics-warehouse@11.0#egg=odoo11_addon_stock_orderpoint_uom&subdirectory=setup/stock_orderpoint_uom
 # TO REVIEW - stock_orderpoint_manual_procurement_uom: Dependency for DDMRP
 #   Glue module for stock_orderpoint_uom and stock_orderpoint_manual_procurement
@@ -177,9 +179,9 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # stock_warehouse_orderpoint_stock_info: Dependency for DDMRP
 #   Allows to know the product availability directly in the reordering rules.
 -e git+https://github.com/OCA/stock-logistics-warehouse@11.0#egg=odoo11_addon_stock_warehouse_orderpoint_stock_info&subdirectory=setup/stock_warehouse_orderpoint_stock_info
-# MIGRATING - stock_warehouse_orderpoint_stock_info_unreserved: Dependency for DDMRP
+# stock_warehouse_orderpoint_stock_info_unreserved: Dependency for DDMRP
 #   Allows to display the availability of stock on hand and unreserved on a reordering rule.
-# (https://github.com/OCA/stock-logistics-warehouse/pull/377)
+-e git+https://github.com/OCA/stock-logistics-warehouse@11.0#egg=odoo11_addon_stock_warehouse_orderpoint_stock_info_unreserved&subdirectory=setup/stock_warehouse_orderpoint_stock_info_unreserved
 # MIGRATING - stock_demand_estimate: Dependency for DDMRP
 #   Allows to create demand estimates for a given product and location, on configurable time periods.
 # (https://github.com/OCA/stock-logistics-warehouse/pull/381)
@@ -242,7 +244,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 #### OCA/manufacture-reporting ####
 # mrp_bom_matrix_report: Related to DDMRP: Identify the products that are used in lots of assemblies or finished products.
 -e git+https://github.com/OCA/manufacture-reporting@11.0#egg=odoo11_addon_mrp_bom_matrix_report&subdirectory=setup/mrp_bom_matrix_report
-# TO REVIEW PR - mrp_bom_current_stock: Report that explodes the bill of materials and show the stock available in the source location.
+# TO REVIEW PR V10 - mrp_bom_current_stock: Report that explodes the bill of materials and show the stock available in the source location.
 # (https://github.com/OCA/manufacture-reporting/pull/39)
 # mrp_bom_structure_xlsx: Export the BOM structure to MS Excel .XLSX format.
 -e git+https://github.com/OCA/manufacture-reporting@11.0#egg=odoo11_addon_mrp_bom_structure_xlsx&subdirectory=setup/mrp_bom_structure_xlsx
