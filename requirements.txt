@@ -293,6 +293,8 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 #### OCA/l10n-usa
 # l10n_us_gaap: US GAAP Sample Chart of Accounts
 -e git+https://github.com/Eficent/l10n-usa@11.0-l10n_us_gaap#egg=odoo11_addon_l10n_us_gaap&subdirectory=setup/l10n_us_gaap
+# l10n_us_gaap_mis_report: Sample Balance Sheet and Income Statement
+-e git+https://github.com/Eficent/l10n-usa@11.0-l10n_us_gaap#egg=odoo11_addon_l10n_us_gaap_mis_report&subdirectory=setup/l10n_us_gaap_mis_report
 
 #### OCA/social ####
 # TO MIGRATE - base_search_mail_content: Allows to search for content of emails
