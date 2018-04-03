@@ -308,6 +308,10 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # ddmrp_adjustment
 # ddmrp_product_replace
 
+### OCA/server-backend ####
+# base_user_role: Allow to easily configure roles for users.
+-e git+https://github.com/OCA/server-backend@11.0#egg=odoo11_addon_base_user_role&subdirectory=setup/base_user_role
+
 #### Eficent/stock-rma ####
 ## MIGRATING AT THIS MOMENT 
 # rma
