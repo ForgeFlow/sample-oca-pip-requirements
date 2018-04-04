@@ -35,6 +35,10 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # disable_odoo_online:  deactivates all bindings to odoo.com that come with the standard code
 -e git+https://github.com/OCA/server-brand@11.0#egg=odoo11_addon_disable_odoo_online&subdirectory=setup/disable_odoo_online
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e75e03626ef9f12199f4fd81de5c6b367c8bd0c3
 #### OCA/mis-builder ####
 # Management Information System reports for Odoo: easily build super fast, beautiful, custom reports such as P&L, Balance Sheets and more.
 -e git+https://github.com/OCA/mis-builder.git@11.0#egg=odoo11_addon_mis_builder&subdirectory=setup/mis_builder
@@ -85,9 +89,14 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_fiscal_year&subdirectory=setup/account_fiscal_year
 # account_type_menu: adds a menu entry Account Type
 -e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_type_menu&subdirectory=setup/account_type_menu
-# REVIEW PULL REQUEST - currency_rate_update: Download exchange rates automatically from the Internet.
-#   (https://github.com/OCA/account-financial-tools/pull/579)
 # TODO - account_accountant: Provides accountant menus. Not a big deal, but in v11 has been moved to Enterprise. 
+# account_group_menu: adds a menu entry Account Group
+-e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_group_menu&subdirectory=setup/account_group_menu
+# account_tag_menu: adds a menu entry Account Tag
+-e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_tag_menu&subdirectory=setup/account_tag_menu
+# account_loan: Allows to manage loans
+-e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_loan&subdirectory=setup/account_loan
+
 
 #### OCA/account-financial-reporting ####
 # account_financial_report
@@ -118,7 +127,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_cookie_notice&subdirectory=setup/website_cookie_notice
 # website_anchor_smooth_scroll:  extends the functionality of website links to support smooth scrolling and allow you to have it for free and with zero configuration.
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_anchor_smooth_scroll&subdirectory=setup/website_anchor_smooth_scroll
-# website_adv_image_optimization: Improves usability in website design
+# TO REVIEW PR: website_adv_image_optimization: Improves usability in website design
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_adv_image_optimization&subdirectory=setup/website_adv_image_optimization
 # website_snippet_preset: Improves usability in website design
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_snippet_preset&subdirectory=setup/website_snippet_preset
@@ -129,7 +138,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # website_odoo_debranding: Removes references to odoo in the website
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_odoo_debranding&subdirectory=setup/website_odoo_debranding
 # TO REVIEW PR: website_js_below_the_fold: moves Javascript assets to the bottom of the page
-#   (https://github.com/OCA/website/pull/438)
+-e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_js_below_the_fold&subdirectory=setup/website_js_below_the_fold
 
 
 ### OCA/website-themes ####
@@ -172,6 +181,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/stock-logistics-warehouse@11.0#egg=odoo11_addon_stock_orderpoint_manual_procurement&subdirectory=setup/stock_orderpoint_manual_procurement
 # stock_orderpoint_uom: Dependency for DDMRP
 #   Allows users to define what unit of measure should be used in procurements created from minimum stock rules.
+#   ON ENHANCE (https://github.com/OCA/stock-logistics-warehouse/pull/389)
 -e git+https://github.com/OCA/stock-logistics-warehouse@11.0#egg=odoo11_addon_stock_orderpoint_uom&subdirectory=setup/stock_orderpoint_uom
 # TO REVIEW - stock_orderpoint_manual_procurement_uom: Dependency for DDMRP
 #   Glue module for stock_orderpoint_uom and stock_orderpoint_manual_procurement
@@ -255,7 +265,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # report_wkhtmltopdf_param: Required for check printing
 -e git+https://github.com/OCA/reporting-engine@11.0#egg=odoo11_addon_report_wkhtmltopdf_param&subdirectory=setup/report_wkhtmltopdf_param
 # report_xlsx: Required to export to XLSX
--e git+https://github.com/OCA/reporting-engine@11.0#egg=odoo11_addon_report_xlsxm&subdirectory=setup/report_xlsx
+-e git+https://github.com/OCA/reporting-engine@11.0#egg=odoo11_addon_report_xlsx&subdirectory=setup/report_xlsx
 # TO MIGRATE - bi_sql_editor: Allows to flexibly define reports by users with knowledge of SQL
 # (https://github.com/OCA/reporting-engine/pull/162)
 # TO MIGRATE - report_py3o: Allows to build reports based on Libreoffice
@@ -270,18 +280,32 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/product-attribute@11.0#egg=odoo11_addon_product_manufacturer&subdirectory=setup/product_manufacturer
 # TO MIGRATE: product_profile: allows to easily define profiles for products for easy creation
 #   (https://github.com/OCA/product-attribute/tree/10.0/product_profile)
-# TODO: product_profile_sequence: Would allow to introduce a separate product sequence for each product profile.
+# TODO: product_sequence: Would allow to introduce a separate product sequence for each product category.
+-e git+https://github.com/Eficent/product-attribute@11.0-mig/imp-product_sequence#egg=odoo11_addon_product_sequence&subdirectory=setup/product_sequence
 
-#### Eficent/cryptocurrency ####
-# TO COMPLETE - account_cryptocurrency
-#   (https://github.com/Eficent/cryptocurrency/tree/11.0/account_cryptocurrency)
+
+#### OCA/currency ####
+# currency_rate_inverted
+-e git+https://github.com/OCA/currency@11.0#egg=odoo11_addon_currency_rate_inverted&subdirectory=setup/currency_rate_inverted
+# currency_rate_update
+-e git+https://github.com/OCA/currency@11.0#egg=odoo11_addon_currency_rate_update&subdirectory=setup/currency_rate_update
+# account_fx_spot
+-e git+https://github.com/Eficent/currency@11.0-add-account_fx_spot#egg=odoo11_addon_account_fx_spot&subdirectory=setup/account_fx_spot
+# account_cryptocurrency
+-e git+https://github.com/Eficent/currency@11.0-add-account_cryptocurrency#egg=odoo11_addon_account_cryptocurrency&subdirectory=setup/account_cryptocurrency
+# currency_rate_update_cmc: Downloads crypto currency rates from CoinMarketCap
+-e git+https://github.com/Eficent/currency@11.0-add-currency_rate_update_coinmarketcap#egg=odoo11_addon_currency_rate_update_cmc&subdirectory=setup/currency_rate_update_cmc
+
+#### OCA/l10n-usa
+# l10n_us_gaap: US GAAP Sample Chart of Accounts
+-e git+https://github.com/Eficent/l10n-usa@11.0-l10n_us_gaap#egg=odoo11_addon_l10n_us_gaap&subdirectory=setup/l10n_us_gaap
+# l10n_us_gaap_mis_report: Sample Balance Sheet and Income Statement
+-e git+https://github.com/Eficent/l10n-usa@11.0-l10n_us_gaap#egg=odoo11_addon_l10n_us_gaap_mis_report&subdirectory=setup/l10n_us_gaap_mis_report
 
 #### OCA/social ####
 # TO MIGRATE - base_search_mail_content: Allows to search for content of emails
 #   (https://github.com/OCA/social/tree/10.0/base_search_mail_content)
 # TO MIGRATE - mail_debrand: Removes Odoo branding
-#
-
 
 #### OCA/ddmrp ####
 ## MIGRATING AT THIS MOMENT from https://github.com/Eficent/ddmrp
@@ -289,6 +313,10 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # ddmrp_history
 # ddmrp_adjustment
 # ddmrp_product_replace
+
+### OCA/server-backend ####
+# base_user_role: Allow to easily configure roles for users.
+-e git+https://github.com/OCA/server-backend@11.0#egg=odoo11_addon_base_user_role&subdirectory=setup/base_user_role
 
 #### Eficent/stock-rma ####
 ## MIGRATING AT THIS MOMENT 
