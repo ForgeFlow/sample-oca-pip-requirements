@@ -127,7 +127,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_cookie_notice&subdirectory=setup/website_cookie_notice
 # website_anchor_smooth_scroll:  extends the functionality of website links to support smooth scrolling and allow you to have it for free and with zero configuration.
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_anchor_smooth_scroll&subdirectory=setup/website_anchor_smooth_scroll
-# TO REVIEW PR: website_adv_image_optimization: Improves usability in website design
+# website_adv_image_optimization: Improves usability in website design
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_adv_image_optimization&subdirectory=setup/website_adv_image_optimization
 # website_snippet_preset: Improves usability in website design
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_snippet_preset&subdirectory=setup/website_snippet_preset
