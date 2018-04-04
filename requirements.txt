@@ -35,10 +35,6 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # disable_odoo_online:  deactivates all bindings to odoo.com that come with the standard code
 -e git+https://github.com/OCA/server-brand@11.0#egg=odoo11_addon_disable_odoo_online&subdirectory=setup/disable_odoo_online
 
-<<<<<<< HEAD
-=======
-
->>>>>>> e75e03626ef9f12199f4fd81de5c6b367c8bd0c3
 #### OCA/mis-builder ####
 # Management Information System reports for Odoo: easily build super fast, beautiful, custom reports such as P&L, Balance Sheets and more.
 -e git+https://github.com/OCA/mis-builder.git@11.0#egg=odoo11_addon_mis_builder&subdirectory=setup/mis_builder
