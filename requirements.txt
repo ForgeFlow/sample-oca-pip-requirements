@@ -52,12 +52,12 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/web.git@11.0#egg=odoo11_addon_web_environment_ribbon&subdirectory=setup/web_environment_ribbon
 # web_sheet_full_width: full width in the form view sheet.
 -e git+https://github.com/OCA/web.git@11.0#egg=odoo11_addon_web_sheet_full_width&subdirectory=setup/web_sheet_full_width
-# PENDING from 10 - web_tree_many2one_clickable: Dependency for DDMRP
+# web_tree_many2one_clickable: Dependency for DDMRP
 #   Adds a widget to allow many2one or reference fields in a tree view open the linked resource.
 -e git+https://github.com/OCA/web.git@11.0#egg=odoo11_addon_web_tree_many2one_clickable&subdirectory=setup/web_tree_many2one_clickable
-# MIGRATING - web_widget_x2many_2d_matrix: Dependency for DDMRP
-#   (https://github.com/OCA/web/pull/871)
+# web_widget_x2many_2d_matrix: Dependency for DDMRP
 #   allows to show an x2many field with 3-tuples ($x_value, $y_value, $value) in a table
+-e git+https://github.com/OCA/web.git@11.0#egg=odoo11_addon_web_widget_x2many_2d_matrix&subdirectory=setup/web_widget_x2many_2d_matrix
 # web_widget_bokeh_chart: Dependency for DDMRP
 -e git+https://github.com/OCA/web.git@11.0#egg=odoo11_addon_web_widget_bokeh_chart&subdirectory=setup/web_widget_bokeh_chart
 # web_tree_dynamic_colored_field: Dependency for DDMRP
@@ -188,9 +188,9 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # stock_warehouse_orderpoint_stock_info_unreserved: Dependency for DDMRP
 #   Allows to display the availability of stock on hand and unreserved on a reordering rule.
 -e git+https://github.com/OCA/stock-logistics-warehouse@11.0#egg=odoo11_addon_stock_warehouse_orderpoint_stock_info_unreserved&subdirectory=setup/stock_warehouse_orderpoint_stock_info_unreserved
-# MIGRATING - stock_demand_estimate: Dependency for DDMRP
+# stock_demand_estimate: Dependency for DDMRP
 #   Allows to create demand estimates for a given product and location, on configurable time periods.
-# (https://github.com/OCA/stock-logistics-warehouse/pull/381)
+-e git+https://github.com/OCA/stock-logistics-warehouse@11.0#egg=odoo11_addon_stock_demand_estimate&subdirectory=setup/stock_demand_estimate
 # stock_available_unreserved: Dependency for DDMRP
 #   Allows users to check the quantity of a stocked product that is available on-hand, and that has not yet been reserved for use anywhere else.
 -e git+https://github.com/OCA/stock-logistics-warehouse@11.0#egg=odoo11_addon_stock_available_unreserved&subdirectory=setup/stock_available_unreserved
