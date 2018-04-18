@@ -125,8 +125,6 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_legal_page&subdirectory=setup/website_legal_page
 # website_cookie_notice: adds the cookie notice, according to the european cookie law, to your website.
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_cookie_notice&subdirectory=setup/website_cookie_notice
-# website_cookie_notice: adds the cookie notice, according to the european cookie law, to your website.
--e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_cookie_notice&subdirectory=setup/website_cookie_notice
 # website_anchor_smooth_scroll:  extends the functionality of website links to support smooth scrolling and allow you to have it for free and with zero configuration.
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_anchor_smooth_scroll&subdirectory=setup/website_anchor_smooth_scroll
 # website_adv_image_optimization: Improves usability in website design
@@ -160,7 +158,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/account-payment@11.0#egg=odoo11_addon_account_check_printing_report_base&subdirectory=setup/account_check_printing_report_base
 # TO MIGRATE - account_check_printing_report_dlt103: Module to print checks using DLT103 format
 #   (https://github.com/OCA/account-payment/tree/10.0/account_check_printing_report_dlt103)
-# MIGRATING - account_due_list: Allows to list open receivables and payables
+# account_due_list: Allows to list open receivables and payables
 -e git+https://github.com/OCA/account-payment@11.0#egg=odoo11_addon_account_due_list&subdirectory=setup/account_due_list
 # TO MIGRATE - account_due_list_aging_comments: Allows to add aging comments to open receivables and payables.
 # (https://github.com/OCA/account-payment/tree/10.0/account_due_list_aging_comments)
