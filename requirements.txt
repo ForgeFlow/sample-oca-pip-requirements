@@ -160,14 +160,14 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/account-payment@11.0#egg=odoo11_addon_account_check_printing_report_base&subdirectory=setup/account_check_printing_report_base
 # TO MIGRATE - account_check_printing_report_dlt103: Module to print checks using DLT103 format
 #   (https://github.com/OCA/account-payment/tree/10.0/account_check_printing_report_dlt103)
-# MIGRATING - account_due_list: Allows to list open receivables and payables
+# account_due_list: Allows to list open receivables and payables
 -e git+https://github.com/OCA/account-payment@11.0#egg=odoo11_addon_account_due_list&subdirectory=setup/account_due_list
 # TO MIGRATE - account_due_list_aging_comments: Allows to add aging comments to open receivables and payables.
 # (https://github.com/OCA/account-payment/tree/10.0/account_due_list_aging_comments)
 # TO MIGRATE - account_due_list_days_overdue: Shows time buckets in the due list
 # (https://github.com/OCA/account-payment/tree/10.0/account_due_list_days_overdue)
-# TO MIGRATE - account_partner_reconcile: adds a button "Match Payments" in the customer & suppliers form view to allow to start the matching of invoices & payments for that partner.
-# (https://github.com/OCA/account-payment/tree/10.0/account_partner_reconcile)
+# REVIEW PR - account_partner_reconcile: adds a button "Match Payments" in the customer & suppliers form view to allow to start the matching of invoices & payments for that partner.
+# (https://github.com/OCA/account-payment/pull/181)
 # TO MIGRATE - account_payment_show_invoice: show the paid invoices related to the payments
 # (https://github.com/OCA/account-payment/tree/10.0/account_payment_show_invoice)
 
