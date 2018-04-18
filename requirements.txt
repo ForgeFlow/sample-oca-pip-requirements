@@ -139,7 +139,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 #   (https://github.com/OCA/website/pull/401)
 # website_odoo_debranding: Removes references to odoo in the website
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_odoo_debranding&subdirectory=setup/website_odoo_debranding
-# TO REVIEW PR: website_js_below_the_fold: moves Javascript assets to the bottom of the page
+# website_js_below_the_fold: moves Javascript assets to the bottom of the page
 -e git+https://github.com/OCA/website@11.0#egg=odoo11_addon_website_js_below_the_fold&subdirectory=setup/website_js_below_the_fold
 
 
