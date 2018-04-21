@@ -75,8 +75,8 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 #### OCA/purchase-workflow ####
 # purchase_exception: Allows to flexibly configure exceptions that block purchase order approval
 -e git+https://github.com/OCA/purchase-workflow.git@11.0#egg=odoo11_addon_purchase_exception&subdirectory=setup/purchase_exception
-# purchase_tier_validation: Allows to define tiered approval workflows
--e git+https://github.com/OCA/purchase-workflow.git@11.0#egg=odoo11_addon_purchase_tier_validation&subdirectory=setup/purchase_tier_validation
+# TO MIGRATE: purchase_tier_validation: Allows to define tiered approval workflows
+# -e git+https://github.com/OCA/purchase-workflow.git@11.0#egg=odoo11_addon_purchase_tier_validation&subdirectory=setup/purchase_tier_validation
 # purchase_order_approved: Adds a new state Approved in purchase orders before the Purchase Order state.
 -e git+https://github.com/OCA/purchase-workflow.git@11.0#egg=odoo11_addon_purchase_order_approved&subdirectory=setup/purchase_order_approved
 # purchase_request: Allows to request materials or external services directly or indirectly.
