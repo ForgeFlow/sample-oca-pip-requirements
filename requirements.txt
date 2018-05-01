@@ -80,12 +80,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # TO MIGRATE: purchase_order_approved: Adds a new state Approved in purchase orders before the Purchase Order state.
 # -e git+https://github.com/OCA/purchase-workflow.git@11.0#egg=odoo11_addon_purchase_order_approved&subdirectory=setup/purchase_order_approved
 # purchase_request: Allows to request materials or external services directly or indirectly.
-# TO MIGRATE FROM 10: (https://github.com/OCA/purchase-workflow/tree/10.0/purchase_request) 
-# purchase_request_procurement: Allows to create Purchase Requests on the basis of Procurement Orders
-# TO MIGRATE FROM 10: (https://github.com/OCA/purchase-workflow/tree/10.0/purchase_request_procurement) 
-# purchase_request_to_rfq: Adds the possibility to create or update Request for Quotation from Purchase Request Lines
-# TO MIGRATE FROM 10: (https://github.com/OCA/purchase-workflow/tree/10.0/purchase_request_to_rfq)
-
+-e git+https://github.com/Eficent/purchase-workflow@11.0-mig-purchase_request#egg=odoo11_addon_purchase_request&subdirectory=setup/purchase_request
 #### OCA/account-financial-tools ####
 # account_fiscal_year: Allows to easily filter by fiscal year
 -e git+https://github.com/OCA/account-financial-tools@11.0#egg=odoo11_addon_account_fiscal_year&subdirectory=setup/account_fiscal_year
