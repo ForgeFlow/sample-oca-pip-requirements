@@ -272,10 +272,8 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/product-attribute@11.0#egg=odoo11_addon_product_manufacturer&subdirectory=setup/product_manufacturer
 # TO MIGRATE: product_profile: allows to easily define profiles for products for easy creation
 #   (https://github.com/OCA/product-attribute/tree/10.0/product_profile)
-# TODO: product_sequence: Would allow to introduce a separate product sequence for each product category.
--e git+https://github.com/Eficent/product-attribute@11.0-mig/imp-product_sequence#egg=odoo11_addon_product_sequence&subdirectory=setup/product_sequence
-# (PR https://github.com/OCA/product-attribute/pull/341)
-
+# product_sequence: Introduce a separate product sequence for each product category.
+-e git+https://github.com/OCA/product-attribute@11.0#egg=odoo11_addon_product_sequence&subdirectory=setup/product_sequence
 
 #### OCA/currency ####
 # currency_rate_inverted
