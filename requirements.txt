@@ -283,9 +283,9 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # account_fx_spot
 -e git+https://github.com/OCA/currency@11.0#egg=odoo11_addon_account_fx_spot&subdirectory=setup/account_fx_spot
 # account_cryptocurrency
--e git+https://github.com/Eficent/currency@11.0-add-account_cryptocurrency#egg=odoo11_addon_account_cryptocurrency&subdirectory=setup/account_cryptocurrency
+-e git+https://github.com/OCA/currency@11.0#egg=odoo11_addon_account_cryptocurrency&subdirectory=setup/account_cryptocurrency
 # currency_rate_update_cmc: Downloads crypto currency rates from CoinMarketCap
--e git+https://github.com/Eficent/currency@11.0-add-currency_rate_update_coinmarketcap#egg=odoo11_addon_currency_rate_update_cmc&subdirectory=setup/currency_rate_update_cmc
+-e git+https://github.com/OCA/currency@11.0#egg=odoo11_addon_currency_rate_update_cmc&subdirectory=setup/currency_rate_update_cmc
 
 #### OCA/l10n-usa
 # l10n_us_gaap: US GAAP Sample Chart of Accounts
