@@ -4,6 +4,9 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/server-ux.git@11.0#egg=odoo11_addon_date_range&subdirectory=setup/date_range
 # base_technical_featuers: Persistent acces to technical features based on user preference
 -e git+https://github.com/OCA/server-ux.git@11.0#egg=odoo11_addon_base_technical_features&subdirectory=setup/base_technical_features
+# base_tier_validation: Supports tiered validation of flows, like purchase orders
+-e git+https://github.com/OCA/server-ux.git@11.0#egg=odoo11_addon_base_tier_validation&subdirectory=setup/base_tier_validation
+
 
 #### OCA/server-tools ####
 # auditlog: Audit who reads/writes/deletes/creates records on any model
@@ -15,9 +18,6 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/server-tools.git@11.0#egg=odoo11_addon_base_cron_exclusion&subdirectory=setup/base_cron_exclusion
 # base_exception: Abstract model to manage customizable exceptions. Required by 'sale_exception' and 'purchase_exception' modules 
 -e git+https://github.com/OCA/server-tools.git@11.0#egg=odoo11_addon_base_exception&subdirectory=setup/base_exception
-# TO MIGRATE from 9 - tier_validation: Supports tiered validation of flows, like purchase orders
-#   (https://github.com/eficent/server-tools 9.0-add-base_tier_validation)
-#
 
 #### OCA/server-auth ####
 # password_security:  set company-level password security requirements
@@ -65,8 +65,8 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/web.git@11.0#egg=odoo11_addon_web_tree_dynamic_colored_field&subdirectory=setup/web_tree_dynamic_colored_field
 
 #### OCA/hr-timesheet ####
-# TODO - hr_timesheet_sheet: In v11 timesheets have been moved to Enterprise
-#
+# REVIEW - hr_timesheet_sheet: In v11 timesheets have been moved to Enterprise
+# (https://github.com/OCA/hr-timesheet/pull/125)
 
 #### OCA/sale-workflow ####
 # sale_exception: Allows to flexibly configure exceptions that block sale order approval
@@ -75,7 +75,8 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 #### OCA/purchase-workflow ####
 # purchase_exception: Allows to flexibly configure exceptions that block purchase order approval
 -e git+https://github.com/OCA/purchase-workflow.git@11.0#egg=odoo11_addon_purchase_exception&subdirectory=setup/purchase_exception
-# TO MIGRATE: purchase_tier_validation: Allows to define tiered approval workflows
+# MIGRATING: purchase_tier_validation: Allows to define tiered approval workflows
+#  (https://github.com/OCA/purchase-workflow/pull/548)
 # -e git+https://github.com/OCA/purchase-workflow.git@11.0#egg=odoo11_addon_purchase_tier_validation&subdirectory=setup/purchase_tier_validation
 # TO MIGRATE: purchase_order_approved: Adds a new state Approved in purchase orders before the Purchase Order state.
 # -e git+https://github.com/OCA/purchase-workflow.git@11.0#egg=odoo11_addon_purchase_order_approved&subdirectory=setup/purchase_order_approved
@@ -152,15 +153,15 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # account_check_printing_report_base: Base module for check printing
 -e git+https://github.com/OCA/account-payment@11.0#egg=odoo11_addon_account_check_printing_report_base&subdirectory=setup/account_check_printing_report_base
 # TO MIGRATE - account_check_printing_report_dlt103: Module to print checks using DLT103 format
-#   (https://github.com/OCA/account-payment/tree/10.0/account_check_printing_report_dlt103)
+-e git+https://github.com/OCA/account-payment@11.0#egg=odoo11_addon_account_check_printing_report_dlt103&subdirectory=setup/account_check_printing_report_dlt103
 # account_due_list: Allows to list open receivables and payables
 -e git+https://github.com/OCA/account-payment@11.0#egg=odoo11_addon_account_due_list&subdirectory=setup/account_due_list
 # TO MIGRATE - account_due_list_aging_comments: Allows to add aging comments to open receivables and payables.
 # (https://github.com/OCA/account-payment/tree/10.0/account_due_list_aging_comments)
 # TO MIGRATE - account_due_list_days_overdue: Shows time buckets in the due list
 # (https://github.com/OCA/account-payment/tree/10.0/account_due_list_days_overdue)
-# REVIEW PR - account_partner_reconcile: adds a button "Match Payments" in the customer & suppliers form view to allow to start the matching of invoices & payments for that partner.
-# (https://github.com/OCA/account-payment/pull/181)
+# account_partner_reconcile: adds a button "Match Payments" in the customer & suppliers form view to allow to start the matching of invoices & payments for that partner.
+-e git+https://github.com/OCA/account-payment@11.0#egg=odoo11_addon_account_partner_reconcile&subdirectory=setup/account_partner_reconcile
 # TO MIGRATE - account_payment_show_invoice: show the paid invoices related to the payments
 # (https://github.com/OCA/account-payment/tree/10.0/account_payment_show_invoice)
 
@@ -202,12 +203,12 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 #
 # TO MIGRATE - stock_inventory_chatter: Allows to put comments on inventory adjustments
 #
-# TO MIGRATE - stock_inventory_discrepancy: Required for proper stock cycle counting
-#
+# REVIEW - stock_inventory_discrepancy: Required for proper stock cycle counting
+# (https://github.com/OCA/stock-logistics-warehouse/pull/418)
 # TO MIGRATE - stock_inventory_lockdown: Required for proper cycle counting
 #
-# TO MIGRATE - stock_inventory_exclude_sublocation: Required for proper cycle counting
-#
+# REVIEW - stock_inventory_exclude_sublocation: Required for proper cycle counting
+#  (https://github.com/OCA/stock-logistics-warehouse/pull/422)
 # TO MIGRATE - stock_inventory_verification_request: Required for proper cycle counting
 #
 # TO MIGRATE - stock_quant_reserved_qty_uom: Required for proper inventory management
@@ -222,9 +223,9 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/stock-logistics-workflow@11.0#egg=odoo11_addon_stock_picking_show_backorder&subdirectory=setup/stock_picking_show_backorder
 # stock_picking_show_return:  adds one tab in the pickings form view to display the returns pickings related to the current one.
 -e git+https://github.com/OCA/stock-logistics-workflow@11.0#egg=odoo11_addon_stock_picking_show_return&subdirectory=setup/stock_picking_show_return
-# TO MIGRATE - stock_split_picking: adds a "Split" button on the outgoing pickings form.
-#   (https://github.com/OCA/stock-logistics-workflow/tree/10.0/stock_split_picking)
-# TO MIGRATE: stock_picking_mass_action: Improves usability in stock transfers
+# REVIEW stock_split_picking: adds a "Split" button on the outgoing pickings form.
+#   (https://github.com/OCA/stock-logistics-workflow/pull/422)
+# REVIEw: stock_picking_mass_action: Improves usability in stock transfers
 #   (https://github.com/OCA/stock-logistics-workflow/pull/390)
 
 #### OCA/manufacture ####
@@ -236,12 +237,12 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # TO MIGRATE - mrp_bom_current_stock: Required for DDMRP
 #   extend the Manufacturing App adding a report that explodes the bill of materials and show the stock available in the source location.
 #   10.0 REVIEW -> (https://github.com/OCA/manufacture-reporting/pull/39)
-# TO MIGRATE - mrp_production_putaway_strategy: Puts finished products to the appropriate bin location
-#   10.0 REVIEW -> (https://github.com/OCA/manufacture/pull/246)
+# REVIEW - mrp_production_putaway_strategy: Puts finished products to the appropriate bin location
+#    (https://github.com/OCA/manufacture/pull/246)
 # TO MIGRATE - mrp_production_raw_material_procurement_group: Allows to create 1 transfer of raw materials to produce for each Manufacturing Order
 #    (https://github.com/OCA/manufacture/tree/9.0/mrp_production_raw_material_procurement_group)
 # TO MIGRATE - mrp_production_request: Allows more flexibility to decide quantities to manufacture
-#    (https://github.com/OCA/manufacture/tree/9.0/mrp_production_raw_material_procurement_group)
+#    (https://github.com/OCA/manufacture/tree/10.0/mrp_production_request)
 
 #### OCA/manufacture-reporting ####
 # mrp_bom_matrix_report: Related to DDMRP: Identify the products that are used in lots of assemblies or finished products.
