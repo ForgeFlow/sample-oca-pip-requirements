@@ -22,8 +22,8 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 #### OCA/server-auth ####
 # password_security:  set company-level password security requirements
 -e git+https://github.com/OCA/server-auth@11.0#egg=odoo11_addon_password_security&subdirectory=setup/password_security
-# TO MIGRATE from 10 - auth_brute_force: Tracks Authentication Attempts and Prevents Brute-force Attacks
-#   (https://github.com/OCA/server-tools/tree/10.0/auth_brute_force)
+# MIGRATING - auth_brute_force: Tracks Authentication Attempts and Prevents Brute-force Attacks
+#   (https://github.com/OCA/server-auth/pull/19)
 # Review PR - auth_totp: Multi-factor authentication
 #   (https://github.com/OCA/server-auth/pull/17)
 -e git+https://github.com/Eficent/server-auth.git@11.0-mig-auth-totp#egg=odoo11_addon_auth_totp&subdirectory=setup/auth_totp
@@ -224,8 +224,8 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/stock-logistics-workflow@11.0#egg=odoo11_addon_stock_picking_show_backorder&subdirectory=setup/stock_picking_show_backorder
 # stock_picking_show_return:  adds one tab in the pickings form view to display the returns pickings related to the current one.
 -e git+https://github.com/OCA/stock-logistics-workflow@11.0#egg=odoo11_addon_stock_picking_show_return&subdirectory=setup/stock_picking_show_return
-# REVIEW stock_split_picking: adds a "Split" button on the outgoing pickings form.
-#   (https://github.com/OCA/stock-logistics-workflow/pull/422)
+# stock_split_picking: adds a "Split" button on the outgoing pickings form.
+-e git+https://github.com/OCA/stock-logistics-workflow@11.0#egg=odoo11_addon_stock_split_picking&subdirectory=setup/stock_split_picking
 # REVIEw: stock_picking_mass_action: Improves usability in stock transfers
 #   (https://github.com/OCA/stock-logistics-workflow/pull/390)
 
@@ -239,7 +239,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 #   extend the Manufacturing App adding a report that explodes the bill of materials and show the stock available in the source location.
 #   10.0 REVIEW -> (https://github.com/OCA/manufacture-reporting/pull/39)
 # REVIEW - mrp_production_putaway_strategy: Puts finished products to the appropriate bin location
-#    (https://github.com/OCA/manufacture/pull/246)
+#    (https://github.com/OCA/manufacture/pull/271)
 # TO MIGRATE - mrp_production_raw_material_procurement_group: Allows to create 1 transfer of raw materials to produce for each Manufacturing Order
 #    (https://github.com/OCA/manufacture/tree/9.0/mrp_production_raw_material_procurement_group)
 # TO MIGRATE - mrp_production_request: Allows more flexibility to decide quantities to manufacture
@@ -260,8 +260,8 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 -e git+https://github.com/OCA/reporting-engine@11.0#egg=odoo11_addon_report_xlsx&subdirectory=setup/report_xlsx
 # MIGRATING - bi_sql_editor: Allows to flexibly define reports by users with knowledge of SQL
 # (https://github.com/OCA/reporting-engine/pull/206)
-# TO MIGRATE - report_py3o: Allows to build reports based on Libreoffice
-# (https://github.com/OCA/reporting-engine/tree/10.0/report_py3o)
+# MIGRATING - report_py3o: Allows to build reports based on Libreoffice
+# (https://github.com/OCA/reporting-engine/pull/217)
 
 #### OCA/knowledge ####
 # TO MIGRATE - document_wopi: allow online collaborative editing and viewing of office files. This works with LibreOffice online
@@ -296,6 +296,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 #### OCA/social ####
 # TO MIGRATE - base_search_mail_content: Allows to search for content of emails
 #   (https://github.com/OCA/social/tree/10.0/base_search_mail_content)
+# mail_debrand: modifies the functionality of emails to remove the Odoo branding.
 -e git+https://github.com/OCA/social@11.0#egg=odoo11_addon_mail_debrand&subdirectory=setup/mail_debrand
 
 #### OCA/ddmrp ####
@@ -316,7 +317,3 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 # rma_account
 # rma_purchase
 # rma_sale
-
-
-
-
