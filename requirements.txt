@@ -22,13 +22,14 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 #### OCA/server-auth ####
 # password_security:  set company-level password security requirements
 -e git+https://github.com/OCA/server-auth@11.0#egg=odoo11_addon_password_security&subdirectory=setup/password_security
-# MIGRATING - auth_brute_force: Tracks Authentication Attempts and Prevents Brute-force Attacks
-#   (https://github.com/OCA/server-auth/pull/19)
+# auth_brute_force: Tracks Authentication Attempts and Prevents Brute-force Attacks
+-e git+https://github.com/OCA/server-auth.git@11.0#egg=odoo11_addon_auth_brute_force&subdirectory=setup/auth_brute_force
 # Review PR - auth_totp: Multi-factor authentication
 #   (https://github.com/OCA/server-auth/pull/17)
 -e git+https://github.com/Eficent/server-auth.git@11.0-mig-auth-totp#egg=odoo11_addon_auth_totp&subdirectory=setup/auth_totp
-# TO MIGRATE from 10 - auth_totp_password_security: glue module needed for full compatibility between the auth_totp and password_security 
-#   (https://github.com/OCA/server-tools/tree/10.0/auth_totp_password_security)
+# Review PR - auth_totp_password_security: glue module needed for full compatibility between the auth_totp and password_security 
+#   (https://github.com/OCA/server-auth/pull/18)
+-e git+https://github.com/Eficent/server-auth.git@11.0-mig-auth_totp_password_security#egg=odoo11_addon_auth_totp_password_security&subdirectory=setup/auth_totp_password_security
 
 #### OCA/server-brand ####
 # res_config_settings_enterprise_remove: Removes enterprise-only features from all settings views
