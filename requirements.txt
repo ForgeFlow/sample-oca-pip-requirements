@@ -68,6 +68,7 @@ https://nightly.odoo.com/11.0/nightly/src/odoo_11.0.latest.zip
 #### OCA/hr-timesheet ####
 # REVIEW - hr_timesheet_sheet: In v11 timesheets have been moved to Enterprise
 # (https://github.com/OCA/hr-timesheet/pull/125)
+-e git+https://github.com/Eficent/hr-timesheet.git@11.0-mig-hr_timesheet_shee#egg=odoo11_addon_hr_timesheet_sheet&subdirectory=setup/hr_timesheet_sheet
 
 #### OCA/sale-workflow ####
 # sale_exception: Allows to flexibly configure exceptions that block sale order approval
