@@ -107,7 +107,7 @@ odoo11-addon-account_financial_report
 odoo11-addon-account_tax_balance
 # customer_activity_statement: details of all activity on the customer receivables between two selected dates. This includes all invoices, refunds and payments. 
 # odoo11-addon-customer_activity_statement
--e git+https://github.com/Eficent/account-financial-reporting@11.0-statement_reports-generic#egg=odoo11_addon_customer_activity_statement&subdirectory=setup/customer_activity_statement
+odoo11-addon-customer_activity_statement
 # customer_outstanding_statement: provides details of all outstanding customer receivables up to a particular date.
 odoo11-addon-customer_outstanding_statement
 
