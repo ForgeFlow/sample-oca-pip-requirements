@@ -312,6 +312,8 @@ odoo11-addon-l10n_us_gaap_mis_report
 # mail_debrand: modifies the functionality of emails to remove the Odoo branding.
 -e git+https://github.com/OCA/social@11.0#egg=odoo11_addon_mail_debrand&subdirectory=setup/mail_debrand
 odoo11-addon-mail_debrand
+# mail_tracking: Allows to track the status of mails sent.
+odoo11-addon-mail_tracking
 
 #### OCA/ddmrp ####
 ## MIGRATING AT THIS MOMENT from https://github.com/Eficent/ddmrp
