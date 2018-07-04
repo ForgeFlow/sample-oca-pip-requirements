@@ -144,7 +144,8 @@ odoo11-addon-website_js_below_the_fold
 #-e git+https://github.com/Eficent/website@11.0-website_product#egg=odoo11_addon_website_product&subdirectory=setup/website_product
 # website_mrp_bom: Adds the abilitiy to display a BOM in the website
 #-e git+https://github.com/Eficent/website@11.0-website_mrp_bom#egg=odoo11_addon_website_mrp_bomt&subdirectory=setup/website_mrp_bom
-
+# MIGRATE:website_portal_purchase: Allows suppliers to view their PO's, invoices online.
+# https://github.com/OCA/website/tree/9.0/website_portal_purchase
 
 ### OCA/website-themes ####
 # website_theme_flexible: Allows to flexibly configure website themes
