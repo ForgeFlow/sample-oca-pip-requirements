@@ -333,3 +333,6 @@ odoo11-addon-base_user_role
 # rma_account
 # rma_purchase
 # rma_sale
+
+#### OCA/knowledge ####
+odoo11-addon-document_page
