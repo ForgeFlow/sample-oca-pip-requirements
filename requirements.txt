@@ -335,4 +335,5 @@ odoo11-addon-base_user_role
 # rma_sale
 
 #### OCA/knowledge ####
+odoo11-addon-knowledge
 odoo11-addon-document_page
